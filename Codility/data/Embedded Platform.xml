@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<testsuite name="Embedded Platform">
+  <testcase name="Embedded Platform Version">
+    <summary/>
+    <steps>
+      <step>
+        <step_number>1</step_number>
+        <actions>uname -r</actions>
+        <expecteresults/>
+      </step>
+      <step>
+        <step_number>2</step_number>
+        <actions>cat /etc/debian_version</actions>
+        <expecteresults/>
+      </step>
+    </steps>
+  </testcase>
+</testsuite>
