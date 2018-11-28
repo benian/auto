@@ -1,0 +1,343 @@
+<?xml version="1.0" ?>
+<testsuite name="User Programs">
+  <testsuite name="Managing User Programs">
+    <testcase name="add program (Run automatically at startup)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given User Programs</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;add a program&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click &quot;Enable&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And entry &quot;Program Name&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And select &quot;Script file&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And entry &quot;Arguments&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And entry &quot;Time out&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And select &quot;Run automatically at startup&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>And download log file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>11</step_number>
+          <actions>And download Program File</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>12</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>13</step_number>
+          <actions>And check log file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>14</step_number>
+          <actions>And check Program File</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="edit program">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : add program (Run automatically at startup)</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given User Programs</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When click &quot;Edit a program&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And entry &quot;Program Name&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And select &quot;Script file&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And entry &quot;Arguments&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And entry &quot;Time out&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And select &quot;Run periodically&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And entry intervals time</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>11</step_number>
+          <actions>And enable status</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>12</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="add program (Run periodically)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given User Programs</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;add a program&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click &quot;Enable&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And entry &quot;Program Name&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And select &quot;Script file&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And entry &quot;Arguments&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And entry &quot;Time out&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And select &quot;Run periodically&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And entry intervals time</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>11</step_number>
+          <actions>And download log file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>12</step_number>
+          <actions>And download Program File</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>13</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>14</step_number>
+          <actions>And check log file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>15</step_number>
+          <actions>And check Program File</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="delete user Programs">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given User Programs</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When select &quot;User Programs&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click &quot;Delete Program&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then remove the programs on program list</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And check the program can't be used.</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Shell script user program">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Connect to the UC-8112-LX computer through the console port or via an 
+Ethernet cable. Log in to the computer.</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Create a working directory on the ThingsPro Gateway.
+$ mkdir myproject</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Enter this working directory and create a shell script file in this folder. 
+The name of this file must be &quot;exec&quot;.
+The content of this example shell script is:
+#! /bun/sh
+
+ntpdate $1</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>When you finish developing the program, set the &quot;exec&quot; file to have 
+execution permissions.
+
+'moxa@Moxa:~/myproject$ chmod +x exec'</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Use the tar command to compress all files created in this folder.
+'moxa@Moxa:~/myproject$ tar cvzf myproject.tar.gz .'</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Calls : add program (Run automatically at startup)</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Support C language">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Support REST web service">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Support Python language">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Bundle Program">
+    <testcase name="Support Python API">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

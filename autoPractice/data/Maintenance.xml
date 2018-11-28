@@ -1,0 +1,676 @@
+<?xml version="1.0" ?>
+<testsuite name="Maintenance">
+  <testsuite name="Upgrading the Firmware">
+    <testcase name="Upgrade from 2.1 to 2.3">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. Modify version of uc8100-mxcloud-cg to 2.1.0-1 in /var/lib/dpkg/status</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Waiting about 10 minutes for upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then SD LED blinks during firmware upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Version changes to new FW Version after rebooting</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Upgrade from 2.3 to 2.3 beta">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. CG Version 2.3</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Waiting about 10 minutes for upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then SD LED blinks during firmware upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Version changes to new FW Version after rebooting</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Upgrade from 2.1 to 2.5">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. CG Version 2.1</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file  V2.5</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Waiting about 10 minutes for upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then SD LED blinks during firmware upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Version changes to new FW Version after rebooting</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Upgrade with lower version">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. CG Version 2.3</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file lower version</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then show error message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Upgrade with higher version(Control Panel)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. Modify version of uc8100-mxcloud-cg to 2.1.0-1 in /var/lib/dpkg/status</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given control panel</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Waiting about 10 minutes for upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then SD LED blinks during firmware upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Version changes to new FW Version after rebooting</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Upgrade with higher version(System Settings)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Pre-Conditions
+1. A valid firmware file for uploading
+2. Modify version of uc8100-mxcloud-cg to 2.1.0-1 in /var/lib/dpkg/status</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given System settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>When Click Upgrade Firmware</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select the firmware file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Waiting about 10 minutes for upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then SD LED blinks during firmware upgrading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Version changes to new FW Version after rebooting</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Exporting the System Configuration File">
+    <testcase name="Exporting the System Configuration File">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then A configuration file config.tar.gz is saved</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Exporting the System Configuration File(Control Panel)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Control Panel</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then A configuration file config.tar.gz is saved</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Exporting the System Configuration File(System Settings)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given System settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then A configuration file config.tar.gz is saved</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Importing a System Configuration File">
+    <testcase name="Importing all config">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When setting before export syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And modify some settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Navigate to home</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And Click Import Configuration</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Check All checkbox and Choose File for the exported config.tar.gz</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>Then System reboot after imported</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And all settings should be as Settings before Export.</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Importing config(nothing to be choose)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When setting before export syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And modify some settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Navigate to home</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And Click Import Configuration</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Check nothing</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And Choose File for the exported config.tar.gz</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>Then show message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Importing config(choose 3 )">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When setting before export syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Export system config</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And modify some settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Navigate to home</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And Click Import Configuration</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Check
+
+Time
+
+Ethernet
+
+port forwarding
+
+checkbox</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And Choose File for the exported config.tar.gz</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>Then System reboot after imported</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>And settings should be as Settings before Export.Other settings should not 
+be modified.</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Importing all config(Control Panel)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Importing all config(System Settings)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Rebooting the System">
+    <testcase name="Rebooting the System">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Reboot system</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And clik yes</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then the system get into reboot procedure within 10 seconds</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And the system back within 2 minutes</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Rebooting the System(Control Panel)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Control panel</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Reboot system</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And clik yes</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then the system get into reboot procedure within 10 seconds</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And the system back within 2 minutes</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Rebooting the System(System Settings)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given System settings page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Reboot system</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And clik yes</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then the system get into reboot procedure within 10 seconds</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And the system back within 2 minutes</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Exporting the System Log Files">
+    <testcase name="Exporting the System Log Files">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When enable syslog(control panel)</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click Export Syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then Whole logs under /var/log compresses as syslog.tar.gz</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Each boot and reboot should be traceable from system logs.</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And Logs should be kept for 7 days</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Exporting the System Log Files(Control Panel)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Home page</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Export Syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then Whole logs under /var/log compresses as syslog.tar.gz</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Exporting the System Log Files(System Settings)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given System settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click Export Syslog</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then Whole logs under /var/log compresses as syslog.tar.gz</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="performing reset-to-factory">
+    <testcase name="Any system configuration should be restored to Factory Default">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

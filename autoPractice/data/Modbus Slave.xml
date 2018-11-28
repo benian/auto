@@ -1,0 +1,279 @@
+<?xml version="1.0" ?>
+<testsuite name="Modbus Slave">
+  <testsuite name="Managing Modbus Slave Devices">
+    <testcase name="Add Modbus Slave Address">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Add a connected device on Modbus (TCP)</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given Modbus Slave</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>when click Add Modbus Slave Address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And enter the correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And new tag show on Modbus Address list</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable a Modbus Slave Device">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Add Modbus Slave Address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given Modbus Slave</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>when click Basic Settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And check enable</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And check Ignore unit ID</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And check Any address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Port: 502</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>And check modbus slave work</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="disable a Modbus Slave Device">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Enable a Modbus Slave Device</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given Modbus Slave</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>when click Basic Settings</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And check modbus slave cannot be used</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Edit a Modbus Slave Device">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Add Modbus Slave Address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given Modbus Slave</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>when click edit Modbus Slave Address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And enter the correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And the tag show on Modbus Address list</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Delete a Modbus Slave Device">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Add Modbus Slave Address</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Given Modbus Slave</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>when select tag</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click delete</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And tag removed from the list</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="User can use Modbus Slave device">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Calls : Enable a Modbus Slave Device</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>Prepare two CG
+CG1 perform Enable a Modbus Slave Device
+&lt;http://squash.moxa.com:8006/squash//test-cases/224/info&gt;
+
+CG2 perform the following steps</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Calls : add TCP interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Given MODBUS&amp;Logging =&gt; MODBUS DEVICE</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>When click MODBUS/TCP tab</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And add aTCP interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Add a connected device</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And click Test</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>10</step_number>
+          <actions>Then show successful message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>11</step_number>
+          <actions>And click show connected devices</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>12</step_number>
+          <actions>And new device display onthe device list</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>

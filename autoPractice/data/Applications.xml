@@ -1,0 +1,958 @@
+<?xml version="1.0" ?>
+<testsuite name="Applications">
+  <testsuite name="AWS IoT">
+    <testcase name="view AWS IoT Application status">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When AWS IoT Application End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Setting Target Host, Port, Topic, Client ID, My Thing Name">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Set correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Import AWS root CA file">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When cllick  Root CA File E.g.: ****-G5.pem  &quot;SELECT&quot; button</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Select correct file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Upload file completed</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then Display the Root CA File name below  E.g.: ****-G5.pem</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Import AWS Device certificate file">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When cllick  Certificate File E.g.: ****-certificate.pem.crt  &quot;SELECT&quot; 
+button</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Select correct file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Upload file completed</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then Display the Root CA File name below  Certificate File E.g.: 
+****-certificate.pem.crt</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Import AWS Device Private Key file">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When cllick  Private Key File E.g.: ****-private.pem.key  &quot;SELECT&quot; button</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Select correct file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Upload file completed</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then Display the Root CA File name below  Private Key File E.g.: 
+****-private.pem.key</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Select tags to upload data">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When select tags</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable data caching when the network connection is down">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS IOT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Logging data when network is disconnected&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And select &quot;File destination&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Enter &quot;Max Storage for Log (MB)&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="AWS IOT reconnect">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given AWS status connect</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Network disconnect</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And check aws status show disconnect</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Network reconnect</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then aws status show connected</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Generic MQTT">
+    <testcase name="view Generic MQTT client settings">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Generic MQTT Client interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Generic MQTT Client End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="connect MQTT broker">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Generic MQTT Client IoT Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Click &quot;Enable&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter  correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And select tags</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And check Connection Status</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And check MQTT client get all tag message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable data caching when the network connection is down">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Generic MQTT Client Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Logging data when network is disconnected&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And select &quot;File destination&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Enter &quot;Max Storage for Log (MB)&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Users can set specific features of the generic MQTT Client">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Generic MQTT Client Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Retain&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And click &quot;Clean Session&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click &quot;More Options&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And enter &quot;Last-Will Topic&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And click &quot;Last-Will Retain&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And Enter &quot;Last-Will Message&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Generic MQTT enable TLS">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Generic MQTT Client interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Enable TLS</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Upload  root CA,certificate,key file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click Save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Update data to &quot;value&quot; type for Generic MQTT">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sparkplug v1.1b">
+    <testcase name="veiw Broker List of Sparkplug IoT Application">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Sparkplug IoT  End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Add a Broker">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Add a Borker&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter Broker Name</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then Broker List display the new broke</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Edit Broker setting">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Edit Broker Settings&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter all correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Delete a Broker">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When select the Borker</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Click &quot;Delete a broker&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>Then the borker can be deleted</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="View Broker settings">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Edit Broker Settings&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable Sparkplug IoT Application">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click ?Basic Settings?</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Enable Sparkplug</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click Save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And connection Status is connect</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Disable Sparkplug IoT Application">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click ?Basic Settings?</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Disable Sparkplug</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click Save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And connection Status is disconnect</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Sparkplug Enable TLS (CA signed server certificate)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Edit Broker Settings&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter all correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click CA signed server certificate</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Sparkplug Enable TLS (Self signed certificates)">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Sparkplug IoT interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Edit Broker Settings&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter all correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And click Self signed certificates</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And upload all correct file</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And click save</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Wonderware on-line insight">
+    <testcase name="View Wonderware Settings">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Wonderware interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Wonderwaret End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Connect Wonderware IoT inSight">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Wonderware Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Click &quot;Enable&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And enter  correct information</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And select tags</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And check Connection Status</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable data caching when the network connection is down">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Wonderware Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Logging data when network is disconnected&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And select &quot;File destination&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Enter &quot;Max Storage for Log (MB)&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Azure IoT">
+    <testcase name="View Azure IoT Settings">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Azure IoT</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Azure IoT Application End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Connect to Azure IOT">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Azure IoT Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Click &quot;Enable&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And Enter  &quot;device connection string&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Select Transport protocol</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And Enter Event update interval</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>And select tags</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>7</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>8</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>9</step_number>
+          <actions>And check Connection Status</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable data caching when the network connection is down">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Azure IOT Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Logging data when network is disconnected&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And select &quot;File destination&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Enter &quot;Max Storage for Log (MB)&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+  <testsuite name="Aliyun">
+    <testcase name="View Aliyun Settings">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Aliyun interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When Aliyun Application End of information loading</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>Then show all settings</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Connect to Aliyun-IoT cloud">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions> </actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+    <testcase name="Enable data caching when the network connection is down">
+      <summary/>
+      <steps>
+        <step>
+          <step_number>1</step_number>
+          <actions>Given Aliyun Interface</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>2</step_number>
+          <actions>When click &quot;Logging data when network is disconnected&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>3</step_number>
+          <actions>And select &quot;File destination&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>4</step_number>
+          <actions>And Enter &quot;Max Storage for Log (MB)&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>5</step_number>
+          <actions>And click &quot;Save&quot;</actions>
+          <expecteresults/>
+        </step>
+        <step>
+          <step_number>6</step_number>
+          <actions>Then display success message</actions>
+          <expecteresults/>
+        </step>
+      </steps>
+    </testcase>
+  </testsuite>
+</testsuite>
